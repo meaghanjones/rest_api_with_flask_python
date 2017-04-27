@@ -1,0 +1,36 @@
+What is a web server?
+- a piece of software designed to accept incoming web requests (for example, google has many webservers, when we go to http://google.com we are sending something to a webserver, and the webserver can decided to respond back)
+
+What do we send?
+- get / HTTP/1.1 Host: www.google.com (This is what is called a get request)
+- Get is called a verb and it tells the server to some extent what is expected of the server
+- / is the path
+- HTTP (is a protocol)
+
+So, what?
+- That's it!
+- the server sees that, and then there's code
+- the code may interpret the GET request in different ways
+  - it may give you an error, if / is not found
+  - it may give you an error if HTTP is not supported
+  - it may give you an error if the server is unavailable
+  - it may give you HTML code back (which is what it normally does)
+  - it may give you some text back
+  - it may give you nothing back
+
+Differences
+- the only difference is what teh server responds with
+- for example Twitter will resond with teh Twitter HTML
+- google will respod with the Google HTML
+
+What else?
+- going to a page will always do a GET request
+- but there are many other things we can do such as POST, PUT, OPTIONS, HEAD and much more!
+- each server responds differently to each, but usually have the same meaning in each
+
+get: retrieve something
+post: receive data and use it (maybe a peice of json - and then an item would be created - presumably)
+put: make something is there (update an item/ or create the chair if it's not there)
+delete: remove something
+
+(these are the 4 most important HTTP verbs - there are many others but these are the only ones used in this course)
